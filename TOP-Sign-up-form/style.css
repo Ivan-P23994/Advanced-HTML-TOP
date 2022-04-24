@@ -1,0 +1,121 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+ }
+
+ @font-face {
+    font-family: 'Norse-Bold';
+    src: url("fonts/Norse-Bold.otf") format("opentype");
+    font-weight: normal;
+    font-style: normal;
+}
+
+
+ .col1{
+    float: left;
+    width: 36%;
+    height: 100vh;
+    display: flex;
+    background-image: url("assets/background.avif");
+    background-repeat: no-repeat; 
+    background-size: cover; 
+ }
+
+.logo_area{
+    margin-top: 30%;
+    width: 100%;
+    height: 18.5vh;
+    display:flex;
+    flex-direction: row;
+    position: relative;
+    align-items: center;
+    background-color: rgba(0, 0, 0, 0.4);
+}
+
+ #odin_text{
+    font : 5.5em "Norse-Bold", monospace;
+    color: white;
+    display:flex;
+    position: absolute;
+    left: 50%;
+    top: 30%;
+ }
+
+ #odin_logo{
+  background-image: url('assets/odin-lined.png');
+  background-size:contain; 
+  background-repeat: no-repeat;
+  position:absolute;
+  width: 90px;
+  height: 130px;
+  right: 50%;
+  top: 10%;
+}
+
+ .col2{
+    float: right;
+    width: 64%;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+.row1{
+    width: auto;
+    height: 33.33%;
+    display: flex;
+    flex-direction: column;
+    justify-content: end;
+    background-color: rgba(249,250,251,255); 
+}
+
+#description{
+    padding: 4%;
+    font-family: sans-serif;
+}
+
+
+.row2{
+    width: auto;
+    height: 33.33%;
+    display: flex;
+    z-index: 2;
+    box-shadow: 5px 0px 8px #d2d3d1;
+}
+
+.row3{
+    width: auto;
+    height: 33.33%;
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    background-color: rgba(249,250,251,255); 
+}
+
+.button{
+    padding: 4%;
+}
+
+button{
+    height: 40px;
+    width: 175px;
+    align-items: center;
+    justify-items: center;
+    background-color: #596D48;
+    color: white;
+    border: none;
+    border-radius: 5px;
+}
+
+.login{
+    font-family: sans-serif;
+    padding-left: 4%;
+}
+
+.login::after{
+    content:' Log in';
+    color:#596D48 ;
+    font-family: sans-serif;
+    font-weight:bolder;
+}
