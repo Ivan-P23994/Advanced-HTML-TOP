@@ -1,0 +1,15 @@
+.container {
+    height: 100%;
+    width: 100%;
+    display: grid;
+    grid-template: repeat(2, 1fr) / repeat(5, 1fr);
+    resize:both;
+    overflow: auto;
+    gap: 10px 10px;
+  }
+
+  .container > div {
+    width: 100px;
+    height: 100px;
+    border: 1px solid blue;
+  }
